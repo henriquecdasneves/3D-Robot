@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <img class="image-gradient" src="gradient.png" alt="gradient" />
@@ -12,15 +13,25 @@
 
     <div class="container">
       <header>
-        <h1 class="logo">HEINLEIN ROBOTICS</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">
+          HEINLEIN ROBOTICS
+        </h1>
         <nav>
-          <a href="#">VISION</a>
-          <a href="#">ROADMAP</a>
-          <a href="#">ROBOTS</a>
-          <a href="#">FUTURES 2100</a>
+          <a data-aos="fade-down" data-aos-duration="1500" href="#">VISION</a>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#">ROADMAP</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#">ROBOTS</a>
+          <a data-aos="fade-down" data-aos-duration="3000" href="#"
+            >FUTURES 2100</a
+          >
         </nav>
 
-        <button class="btn-signing">SIGNING</button>
+        <button
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          class="btn-signing"
+        >
+          SIGNING
+        </button>
       </header>
 
       <main>
@@ -41,13 +52,20 @@
           </div>
         </div>
       </main>
+
+      <spline-viewer
+        class="robot-3d"
+        url="https://prod.spline.design/GFqwDtd7-lO1lwQK/scene.splinecode"
+      ></spline-viewer>
     </div>
     <script
       type="module"
       src="https://unpkg.com/@splinetool/viewer@1.10.74/build/spline-viewer.js"
     ></script>
-    <spline-viewer
-      url="https://prod.spline.design/GFqwDtd7-lO1lwQK/scene.splinecode"
-    ></spline-viewer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
